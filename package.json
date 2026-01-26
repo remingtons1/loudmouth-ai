@@ -1,6 +1,6 @@
 {
   "name": "loudmouth-ai",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "AI-powered marketing automation agent. Traffic analytics, SEO insights, content generation, and social posting.",
   "type": "module",
   "main": "dist/index.js",
@@ -57,7 +57,6 @@
     "skills/**",
     "patches/**",
     "README.md",
-    "README-header.png",
     "CHANGELOG.md",
     "LICENSE",
     "scripts/postinstall.js",
@@ -78,7 +77,7 @@
   "scripts": {
     "dev": "node scripts/run-node.mjs",
     "postinstall": "node scripts/postinstall.js",
-    "prepack": "pnpm build && pnpm ui:build",
+    "prepack": "npm run build",
     "docs:list": "node scripts/docs-list.js",
     "docs:bin": "node scripts/build-docs-list.mjs",
     "docs:dev": "cd docs && mint dev",
