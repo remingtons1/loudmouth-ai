@@ -1,7 +1,7 @@
 {
-  "name": "clawdbot",
-  "version": "2026.1.25",
-  "description": "WhatsApp gateway CLI (Baileys web) with Pi RPC agent",
+  "name": "loudmouth-ai",
+  "version": "0.1.0",
+  "description": "AI-powered marketing automation agent. Traffic analytics, SEO insights, content generation, and social posting.",
   "type": "module",
   "main": "dist/index.js",
   "exports": {
@@ -10,6 +10,7 @@
     "./plugin-sdk/*": "./dist/plugin-sdk/*"
   },
   "bin": {
+    "loudmouth": "dist/entry.js",
     "clawdbot": "dist/entry.js"
   },
   "files": [
