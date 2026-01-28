@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import ChatWidget from '../components/ChatWidget'
 
 interface TrafficData {
   current: { sessions: number; users: number; pageViews: number; avgSessionDuration: number }
@@ -644,6 +645,8 @@ export default function Dashboard() {
       <footer style={{ marginTop: 48, paddingTop: 24, borderTop: '1px solid var(--border)', color: 'var(--text-muted)', fontSize: 13 }}>
         Loudmouth v0.2.0 • Last updated: {new Date().toLocaleString()}
       </footer>
+
+      <ChatWidget />
 
       {/* Content Editor Modal */}
       {showEditor && editingContent && (
