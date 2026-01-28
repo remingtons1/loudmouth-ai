@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Environment files (contain secrets)
+.env
+.env.local
+.env.production
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+
+# Debug
+npm-debug.log*
+.vercel
